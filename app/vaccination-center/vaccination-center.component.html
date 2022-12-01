@@ -1,0 +1,19 @@
+
+<div  *ngIf="centerVac"
+    style="width: 400px;  padding-top:10px; padding-bottom:10px;border: 3px solid #A0A0A0; text-align: center;background: #C0C0C0;">
+   
+    <h2>{{centerVac.name | uppercase}}</h2>
+    <div>{{centerVac.address | lowercase}}
+        <span>{{centerVac.postalCode}} {{centerVac.city}}</span>
+    </div>
+    <div>Ouvert depuis le {{centerVac.openingDate | date:'dd/MM/Y'}} </div>
+
+
+  <br>
+    <div>
+        <button (click)="delete()">Supprimer</button>
+       
+    </div>
+</div>
+
+
